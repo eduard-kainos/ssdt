@@ -2,3 +2,4 @@
 <app-login *ngIf="user.loggedin!=true"></app-login>
 <app-menu *ngIf="user.loggedin"></app-menu>
 <app-content *ngIf='user.content === "addForm"'></app-content>
+<app-report *ngIf='user.content === "showReport"'></app-report>

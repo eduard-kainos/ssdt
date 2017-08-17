@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from "@angular/common/http";
 import {Employee} from "./employee";
 import {User} from "./user";
+import {Observable} from "rxjs/Observable";
 
 @Injectable()
 export class DataService {
@@ -14,7 +15,12 @@ export class DataService {
     this.currentUser.password = "";
   }
 
-  employees = this.http.get('/api/emps');
+  public getEmployees(departmentID){
+    const body = {
+      "departmentID": departmentID
+    };
+    return this.http.post<Employee[]>('/api/emps', body);
+  }
 
   public doLogin(user){
     const body = {

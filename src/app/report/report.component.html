@@ -1,0 +1,38 @@
+<div class="container col-sm-9 col-md-10 pull-right">
+
+  <div class="form-group">
+    <select class="form-control" id="departmentSelect" (change)="onChange()" required>
+      <option>Department of Things</option>
+      <option>HR</option>
+      <option>Sales</option>
+      <option>Development</option>
+    </select>
+
+  </div>
+  <br/>
+  <table class="table table-bordered">
+    <thead>
+    <tr>
+      <th>Employee ID</th>
+      <th>Name</th>
+      <th>Department</th>
+      <th>Address</th>
+      <th>NIN</th>
+      <th>Bank Number</th>
+      <th>Starting Salary</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let employee of employees|async">
+      <th scope="row">{{employee.id}}</th>
+      <td>{{employee.name}}</td>
+      <td>{{employee.departmentID}}</td>
+      <td>{{employee.address}}</td>
+      <td>{{employee.nin}}</td>
+      <td>{{employee.banknumber}}</td>
+      <td>{{employee.startingSalary}}</td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>

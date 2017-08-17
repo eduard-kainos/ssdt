@@ -23,6 +23,7 @@ export class TopbarComponent implements OnInit {
   onLogout(user){
     user.loggedin = false;
     user.priviledges = "";
+    user.content = "";
   }
 
 }

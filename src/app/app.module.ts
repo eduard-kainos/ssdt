@@ -11,6 +11,7 @@ import { AlertModule } from 'ngx-bootstrap';
 import { TopbarComponent } from './topbar/topbar.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
+import { ReportComponent } from './report/report.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContentComponent } from './content/content.component';
     LoginComponent,
     TopbarComponent,
     MenuComponent,
-    ContentComponent
+    ContentComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
