@@ -20,4 +20,9 @@ export class TopbarComponent implements OnInit {
   ngOnInit() {
   }
 
+  onLogout(user){
+    user.loggedin = false;
+    user.priviledges = "";
+  }
+
 }
