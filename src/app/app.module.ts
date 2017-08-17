@@ -9,12 +9,14 @@ import {HttpClientModule} from "@angular/common/http";
 import { LoginComponent } from './login/login.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { TopbarComponent } from './topbar/topbar.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    TopbarComponent
+    TopbarComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
