@@ -6,12 +6,12 @@ import {User} from "./user";
 @Injectable()
 export class DataService {
 
-  public defaultUser:User;
+  public currentUser:User;
 
   constructor(private http: HttpClient) {
-    this.defaultUser = new User();
-    this.defaultUser.username = "";
-    this.defaultUser.password = "";
+    this.currentUser = new User();
+    this.currentUser.username = "";
+    this.currentUser.password = "";
   }
 
   employees = this.http.get('/api/emps');
@@ -29,6 +29,7 @@ export class DataService {
     this.http.post("/api/login", body, options).subscribe(data => {
       for (let priv in data) {
         tst = tst + "," + data[priv].privs.toString();
+        user.loggedin = true;
       }
     });
 

@@ -14,7 +14,7 @@ export class LoginComponent {
 
   constructor(data: DataService) {
     this.data = data;
-    this.user = this.data.defaultUser;
+    this.user = this.data.currentUser;
   }
 
   onSubmit(user){

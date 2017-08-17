@@ -1,1 +1,2 @@
-<app-login></app-login>
+<app-topbar *ngIf="user.loggedin"></app-topbar>
+<app-login *ngIf="user.loggedin!=true"></app-login>
