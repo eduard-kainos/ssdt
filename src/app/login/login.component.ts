@@ -1,15 +1,24 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import {User} from "../user";
+import {DataService} from "../data.service";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
 
-  constructor() { }
+  user: User;
+  data: DataService;
 
-  ngOnInit() {
+  constructor(data: DataService) {
+    this.data = data;
+    this.user = this.data.defaultUser;
+  }
+
+  onSubmit(user){
+    console.log("LOGIN WITH: ", user.username , user.password);
   }
 
 }
