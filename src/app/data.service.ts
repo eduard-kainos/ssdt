@@ -25,6 +25,13 @@ export class DataService {
       headers: new HttpHeaders().set('Content-Type', 'application/json'),
     };
 
-    return this.http.post("/api/login", body, options).subscribe();
+    var tst = "";
+    this.http.post("/api/login", body, options).subscribe(data => {
+      for (let priv in data) {
+        tst = tst + "," + data[priv].privs.toString();
+      }
+    });
+
+    return tst;
   }
 }

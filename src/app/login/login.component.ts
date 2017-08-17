@@ -18,9 +18,7 @@ export class LoginComponent {
   }
 
   onSubmit(user){
-    console.log("TRYING LOGIN WITH: ", user.username , user.password);
-    var message = this.data.doLogin(user);
-    console.log("RESULTS: ", message);
+    this.user.priviledges = this.data.doLogin(user);
   }
 
 }
