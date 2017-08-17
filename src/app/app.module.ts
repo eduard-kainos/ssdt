@@ -6,15 +6,19 @@ import {DataService} from "./data.service";
 import {SwitchboardService} from "./switchboard.service";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { LoginComponent } from './login/login.component';
+import { AlertModule } from 'ngx-bootstrap';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    AlertModule.forRoot()
   ],
   providers: [
     DataService,

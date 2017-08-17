@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {DataService} from "./data.service";
 import {Employee} from "./employee";
 import {SwitchboardService} from "./switchboard.service";
+import {LoginComponent} from "./login/login.component";
 
 @Component({
   selector: 'app-root',
