@@ -35,4 +35,24 @@ export class DataService {
 
     return tst;
   }
+
+
+  public doEmployee(employee){
+    const body = {
+      "name": employee.name,
+      "departmentID": employee.departmentID,
+      "address": employee.address,
+      "nin": employee.nin,
+      "bankNumber": employee.banknumber,
+      "startingSalary": employee.startingSalary
+    };
+    const options = {
+      headers: new HttpHeaders().set('Content-Type', 'application/json'),
+    };
+
+    this.http.post("/api/new", body, options).subscribe(data => {
+      console.log("EMPLOYEE ADDED");
+    });
+  }
+
 }

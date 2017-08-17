@@ -5,5 +5,5 @@ export class Employee {
   address: string;
   nin: string;
   banknumber: string;
-  salary: number;
+  startingSalary: number;
 }

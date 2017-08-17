@@ -3,4 +3,5 @@ export class User {
   password: string;
   priviledges: string;
   loggedin: boolean;
+  content: string;
 }

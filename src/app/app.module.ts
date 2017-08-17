@@ -10,13 +10,15 @@ import { LoginComponent } from './login/login.component';
 import { AlertModule } from 'ngx-bootstrap';
 import { TopbarComponent } from './topbar/topbar.component';
 import { MenuComponent } from './menu/menu.component';
+import { ContentComponent } from './content/content.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     TopbarComponent,
-    MenuComponent
+    MenuComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

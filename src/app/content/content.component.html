@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="col-md-5 pull-right">
+    <div class="form-area">
+      <form role="form">
+        <br style="clear:both">
+        <h3 style="margin-bottom: 25px; text-align: center;">Add A New Employee</h3>
+        <div class="form-group">
+          <input type="text" class="form-control" id="name" name="name" placeholder="Name" [(ngModel)]="emp.name" required>
+        </div>
+        <div class="form-group">
+          <select class="form-control" id="exampleSelect1"  required>
+            <option value="1">Department of Things</option>
+            <option value="2">HR</option>
+            <option value="3">Sales</option>
+            <option value="4">Development</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="address" name="address" placeholder="Address" [(ngModel)]="emp.address" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="nin" name="nin" placeholder="National Insurance Number" [(ngModel)]="emp.nin" required>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" id="bankaccountnumber" name="bankaccountnumber" placeholder="Bank Account Number" [(ngModel)]="emp.banknumber" required>
+        </div>
+        <div class="form-group">
+          <input type="number" class="form-control" id="startingsalary" name="startingsalary" placeholder="Starting Salary" [(ngModel)]="emp.startingSalary" required>
+        </div>
+
+        <br/>
+        <button type="button" id="submit" name="submit" class="btn btn-primary pull-right" (click)="submitForm(emp)">Submit Form</button>
+      </form>
+    </div>
+  </div>
+</div>
