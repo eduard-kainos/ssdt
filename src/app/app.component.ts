@@ -9,7 +9,7 @@ import {SwitchboardService} from "./switchboard.service";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Spike test';
 
   data: DataService;
   thisEmp: Employee;

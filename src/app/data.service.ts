@@ -7,6 +7,6 @@ export class DataService {
 
   constructor(private http: HttpClient) {}
 
-  employees = this.http.get<Employee[]>('/api/emps');
+  employees = this.http.get('/api/emps');
 
 }
