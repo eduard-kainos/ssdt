@@ -24,5 +24,6 @@ export class ContentComponent implements OnInit {
     emp.departmentID = 1;
     console.log("SENDING:" , emp);
     this.data.doEmployee(emp);
+    alert("Employee added. 🤡");
   }
 }
