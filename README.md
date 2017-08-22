@@ -36,8 +36,9 @@ National Insurance Number
 Bank account IBAN/BIC
 Starting salary
 Employee number
-User story 2:
 ```
+
+#### User story 2:
 
 As a member of the HR team, I want to generate a report containing employees per department so that BU heads can see who is in each department.
 
