@@ -15,6 +15,7 @@ Node, npm, git
 ```
 - Clone the project
 - npm install in the project root
+- npm start
 ```
 
 ## Requirements
